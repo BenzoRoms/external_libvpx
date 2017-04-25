@@ -3,13 +3,7 @@
 # libvpx_codec_srcs_c_arm
 # libvpx_codec_srcs_asm_arm
 
-ifeq ($(ARCH_ARM_HAVE_NEON),true)
-libvpx_target := config/arm-neon
-else ifeq ($(ARCH_ARM_HAVE_ARMV7A),true)
-libvpx_target := config/arm
-else
 libvpx_target := config/generic
-endif
 
 LOCAL_ARM_MODE := arm
 
